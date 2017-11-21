@@ -1,0 +1,124 @@
+\documentclass[pdftex,11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}
+\moderncvtheme[blue]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                      % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Mauro}
+\familyname{Tubiana}
+\address{Via Dei Rododendri 7}{31015, Conegliano (TV), Italia}
+\mobile{(+39) 347 9372741}
+%\phone{phone (optional)}
+%\fax{fax (optional)}
+\email{mauro.tubiana@gmail.com}
+%\photo[64pt]{picture}  % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file
+%\quote{Some quote (optional)}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\sffamily
+\maketitle
+
+\section{Educazione}
+
+\cventry{2008--2011}{Laurea Magistrale}{Universita' degli Studi di Padova}{}{\textit{102/110}}{
+Laurea Magistrale in Ingegneria Informatica
+}
+\cventry{2004--2008}{Laurea Triennale}{Universita' degli Studi di Padova}{}{\textit{96/110}}{
+Laurea Triennale in Ingegneria Informatica
+}
+\cventry{1999--2004}{Diploma}{ITIS Galileo Galilei}{Padova}{}{
+Diploma di \textit{Perito Industriale Capotecnico Elettronica e Telecomunicazioni}
+}
+
+\section{Tesi Magistrale}
+
+\cvline{Titolo}{\emph{Segmentazione congiunta di immagini ed informazione geometrica e suo utilizzo all’interno
+di algoritmi di segmentazione stereoscopica}}
+\cvline{Relatore}{Prof. Pietro Zanuttigh}
+\cvline{Correlatore}{Ing. Carlo Dalmutto}
+
+\section{Esperienze Lavorative}
+
+\subsection{Vocational}
+
+\cventry{2016--}{Sviluppatore Firmware e Software}{DigitalLighting}{Padova}{}{
+\begin{itemize}
+	\item Personalizzazione driver per sistemi Linux
+	\item Personalizzazione OperWRT
+\end{itemize}
+}
+
+\cventry{2014-2016}{Sviluppatore Firmware e Software}{WearIT}{Padova}{}{
+\begin{itemize}
+	\item Sviluppo applicazioni per sistema operativo Android
+	\item Personalizzazione di driver, principalmente per touchscreen
+\end{itemize}
+}
+
+\cventry{2012-2014}{Sviluppatore Firmware}{Si14 S.p.A.}{Padova - Marghera}{}{
+\begin{itemize}
+	\item Porting di Kernel Linux, principalmente su SoC ARM
+	\item Sviluppo driver user-space su sistemi Linux-based (GNU ed Android)
+	\item Porting Android su hardware personalizzato
+	\item Personalizzazione di distribuzioni embedded
+	\item Sviluppo firmware su microcontrollori e SoC Atmel e Nordic
+	\item Sviluppo di tool per l’automatizzazione di test hardware
+\end{itemize}
+}
+
+\section{Lingue}
+\cvlanguage{Italiano}{}{Madrelingua}
+\cvlanguage{Inglese}{Scritto}{Buono}
+\cvlanguage{}{Parlato}{Buono}
+
+\section{Competenze informatiche}
+\cvline{OS}{Buona conoscenza di sistemi operitivi GNU/Linux, in paricolare Debian-based, uso di sistemi operativi Microsoft}
+\cvline{Linguaggi}{Buona conoscenza di C/C++, Perl, Matlab, \LaTeX, scripting BASH, Java, conoscenza base
+di Html e Ruby}
+\cvline{Controllo di versione}{Buona conoscenza di git, minima conoscenza di mercurial ed SVN}
+\cvline{Ambienti di sviluppo}{Basilare esperienza con Visual Studio e Keil, buona conoscenza di gcc, gdb, make, vim,
+Eclipse, Android Studio}
+\cvline{Librerie e Framework}{Buona conoscenza di OpenCV (interfaccia C e C++), con particolare attenzione al modulo
+core, esperienze con OpenGL, OpenMP ed OpenMPI su piattaforma AIX}
+\cvline{Kernel Linux}{Conoscenza di alcuni aspetti relativi allo sviluppo di driver e codice kernel-space su kernel
+2.6.x e 3.x}
+\cvline{Android}{Porting su sistemi custom e sviluppo applicazioni}
+
+\section{Competenze tecniche}
+\cvline{Grafica}{Minima esperienza nell’uso di Flash, Photoshop e Gimp}
+\cvline{Elettronica}{Basi di elettronica digitale}
+\cvline{SoC}{Freescale iMX6 (ARM CortexA9), Atheros AR9331 (MIPS), Texas Instruments AM335 (ARM CortexA8), Freescale i.MX28 (ARM 9), Nordic NRF5x
+(ARM Cortex M0 con Bluetooth LE)}
+\cvline{Micro controllori}{Atmel AVR 8 bit, Atmel 8051}
+\cvline{Radio}{Bluetooth LE e mesh, minima esperienza con transceiver radio sub-Ghz, GPS, wifi mesh}
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Others}
+%\cvlistitem{Italian B driving licence}
+%\cvlistdoubleitem{Item 3}{}
+
+\end{document}
